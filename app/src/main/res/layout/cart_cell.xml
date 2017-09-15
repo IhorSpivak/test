@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    >
+
+    <ImageView
+        android:id="@+id/imgImageCartCell"
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bottle4"
+        />
+
+    <RelativeLayout
+        android:id="@+id/contentLayoutCartCell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnChangeQuantityCartCell"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:id="@+id/txtProductCartCell"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Large Text"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:id="@+id/txtNameCartCell"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Large Text"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/txtMainAttributeCartCell"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="90 ml"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPriceCartCell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnChangeQuantityCartCell"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+
+            android:minWidth="80dp"
+            android:text="100.00 $"
+            android:textColor="@color/colorGray"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            style="@style/buttonClear"
+            android:id="@+id/btnDeleteItemCartCell"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/cart_delete"
+            />
+
+        <Button
+            android:id="@+id/btnChangeQuantityCartCell"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/txtQuantityCartCell"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:lines="1"
+            android:elevation="3dp"
+            android:text="@string/change_quantity"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/txtQuantityCartCell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2x"
+            android:textColor="@color/colorGray"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_alignBaseline="@+id/txtPriceCartCell"
+            android:layout_alignBottom="@+id/txtPriceCartCell"
+            android:layout_toStartOf="@+id/txtPriceCartCell" />
+
+
+    </RelativeLayout>
+</LinearLayout>

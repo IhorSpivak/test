@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:layout_marginTop="15dp"
+        android:id="@+id/listScreenOrdersHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/colorGrayListBackground"
+        android:divider="@color/colorTransparent"
+        android:dividerHeight="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutEmptyCartMessageScreenOrdersHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/txtEmptyListScreenOrdersHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:text="@string/no_items_in_orders_history"
+            android:visibility="visible"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

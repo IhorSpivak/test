@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thankyou"
+            android:padding="10dp"
+            />
+        <TextView
+            android:id="@+id/txtOrderNumberThankYouScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/your_order_number"
+            android:textSize="12sp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/txtOrderHintThankYouScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/order_hint"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_below="@+id/centerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:padding="0dp"
+            >
+            <Button
+                android:id="@+id/btnCheckMailThankYouScreen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="@string/check_your_mail_caps"
+                android:layout_marginRight="10dp"
+                android:textSize="10sp"
+                android:lines="1"
+                android:elevation="3dp"
+                />
+            <Button
+                android:id="@+id/btnContinueThankYouScreen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:textSize="10sp"
+                android:elevation="3dp"
+                android:text="@string/continue_shopping_caps"
+                android:layout_marginLeft="10dp"
+                android:lines="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Thank you"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

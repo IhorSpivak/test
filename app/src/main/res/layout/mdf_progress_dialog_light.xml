@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mdf_progress_dialog_light_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#80000000" >
+
+    <RelativeLayout
+        android:id="@+id/mdf_progress_dialog_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="0dp"
+        android:background="@drawable/white_shape"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <View
+            android:id="@+id/mdf_progress_dialog_top_margin_layout"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="10dp" 
+            android:background="@android:color/transparent"/>
+
+        <RelativeLayout
+            android:id="@+id/mdf_progress_dialog_bar_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mdf_progress_dialog_text"
+            android:layout_below="@+id/mdf_progress_dialog_top_margin_layout"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/mdf_progress_dialog_clock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/content_description_image"
+                android:src="@drawable/clock_circle" />
+
+            <ProgressBar
+                android:id="@+id/mdf_progress_dialog_roller_hours"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/mdf_progress_dialog_rotating_clock_arrow_hour"
+                android:background="@android:color/transparent"
+                android:visibility="gone" />
+            <ProgressBar
+                android:id="@+id/mdf_progress_dialog_roller_min"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/mdf_progress_dialog_rotating_clock_arrow_minute"
+                android:background="@android:color/transparent"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mdf_progress_dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/please_wait"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "1082178253361",
+    "project_id": "firebase-mydutyfree"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082178253361:android:41293501afaf1bcc",
+        "android_client_info": {
+          "package_name": "llc.net.mydutyfree.newmdf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj402VT9fc_QtN2PJOsK5LlLa-W2SzsHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-93333177-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

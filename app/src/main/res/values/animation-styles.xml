@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="SlideDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in_fast</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_fast</item>
+    </style>
+    
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="AlertDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/stretch_fade_in_center</item>
+        <item name="android:windowExitAnimation">@anim/shrink_fade_out_center</item>
+    </style>
+
+    <style name="TutorialDialogAnimation">
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+</resources>

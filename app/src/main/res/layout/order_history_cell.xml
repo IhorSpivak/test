@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorWhite"
+    android:layout_margin="15dp"
+    android:elevation="5dp"
+    android:minHeight="50dp"
+    android:gravity="center"
+    android:clickable="true"
+    >
+    <TextView
+        android:id="@+id/txtOrderDateOrderCell"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:text="15-54-4455(#223)"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/txtOrderStatusOrderCell"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:text="CANCELLED"
+        android:layout_marginRight="15dp"
+        android:gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:id = "@+id/relativeLayoutRootProductItemCell"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:background = "@color/colorWhite"
+    android:padding = "0dp"
+    android:clipChildren="true"
+    android:elevation="8dp"
+    >
+    <ImageView
+        android:contentDescription="@string/content_description_image"
+        android:id = "@+id/imgGridCellImage"
+        android:layout_width = "130dp"
+        android:minWidth="130dp"
+        android:layout_height = "130dp"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true"
+        android:layout_margin = "15dp"
+        android:scaleType="centerInside"
+        android:src = "@drawable/bottle1"
+        />
+
+    <TextView
+        android:id = "@+id/txtGridCellProduct"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/imgGridCellImage"
+        android:layout_marginTop = "0dp"
+        android:gravity="center_horizontal"
+        android:text = "PRODUCT"
+        android:textSize = "15sp"
+        android:maxLines="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        />
+
+    <TextView
+        android:id = "@+id/txtGridCellName"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/txtGridCellProduct"
+        android:layout_marginTop = "0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text = "NAME"
+        android:textSize = "15sp"
+        android:textStyle = "bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        />
+
+    <TextView
+        android:id = "@+id/txtGridCellMainAttribute"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@id/txtGridCellName"
+        android:layout_marginTop = "0dp"
+        android:gravity="center"
+        android:text = "500 ml"
+        android:textSize = "15sp"
+        android:textStyle = "bold"
+        android:maxLines="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/txtGridCellMainAttribute"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/linearLayoutPricesGridCell"
+        android:weightSum="1"
+
+        >
+        <llc.net.mydutyfree.utils.SlashStrikedTextView
+            android:id = "@+id/txtGridCellPriceOld"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight=".5"
+            android:text = "500 $"
+
+            android:textColor = "@color/colorGray"
+            android:gravity="center"
+
+            android:textSize = "12sp"
+            android:textStyle = "normal"
+            />
+        <TextView
+            android:id = "@+id/txtGridCellPrice"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:text="1000.00"
+            android:gravity="center"
+            android:layout_weight=".5"
+            android:textSize = "16sp"
+            android:textStyle = "bold"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/bottom_divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.0dp"-->
+        <!--android:background="@color/colorDividers"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--/>-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/top_divider"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.0dp"-->
+        <!--android:background="@color/colorDividers"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/left_divider"-->
+        <!--android:layout_width="0.0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/colorDividers"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignBottom="@+id/linearLayoutPricesGridCell"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/right_divider"-->
+        <!--android:layout_width="0.0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/colorDividers"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignBottom="@+id/linearLayoutPricesGridCell"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--/>-->
+</RelativeLayout>

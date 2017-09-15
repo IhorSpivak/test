@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <llc.net.mydutyfree.base.WrapContentHeightViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="100dp"></llc.net.mydutyfree.base.WrapContentHeightViewPager>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/pageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager"
+        android:padding="10dp"
+        app:fillColor="@color/colorBlack"
+        app:pageColor="@color/colorWhite"
+        app:radius="4dp"
+        app:strokeColor="@color/colorBlack"
+        app:strokeWidth="1dp" />
+
+    <LinearLayout
+        android:id="@+id/headerDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pageIndicator"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorDividers" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headerButtons"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/headerDivider"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/headerSpecialOffers"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:layout_weight="50"
+            android:background="@color/colorWhite"
+            android:text="@string/special_offers_caps"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorDividers" />
+
+        <Button
+            android:id="@+id/headerTopSellers"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="50"
+            android:background="@color/colorWhite"
+            android:text="@string/top_sellers_caps"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutRedLineContainer"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/headerButtons"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <View
+            android:id="@+id/viewRedLine"
+            android:layout_width="177dp"
+            android:layout_height="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorRed" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/viewShadow1Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/relativeLayoutRedLineContainer"
+        android:background="#c4c4c4" />
+    <View
+        android:id="@+id/viewShadow2Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow1Line"
+        android:background="#cbcbcb" />
+    <View
+        android:id="@+id/viewShadow3Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow2Line"
+        android:background="#d1d1d1" />
+    <View
+        android:id="@+id/viewShadow4Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow3Line"
+        android:background="#dbdbdb" />
+    <View
+        android:id="@+id/viewShadow5Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow4Line"
+        android:background="#e2e2e2" />
+    <View
+        android:id="@+id/viewShadow6Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow5Line"
+        android:background="#e9e9e9" />
+    <View
+        android:id="@+id/viewShadow7Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow6Line"
+        android:background="#ededed" />
+    <View
+        android:id="@+id/viewShadow8Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow7Line"
+        android:background="#f1f1f1" />
+    <View
+        android:id="@+id/viewShadow9Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow8Line"
+        android:background="#f4f4f4" />
+    <View
+        android:id="@+id/viewShadow10Line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/viewShadow9Line"
+        android:background="#f5f5f5" />
+</RelativeLayout>

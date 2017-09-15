@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrayListBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrayListBackground"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/imgMainImageScreenLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_login_screen"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmailScreenLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/edtEmailScreenLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPasswordScreenLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/edtPasswordScreenLogIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorRed"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/chkbxAgreeNewsScreenLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Agree to receive news on that email"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnLogInScreenLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="00dp"
+            android:layout_marginTop="15dp"
+            android:elevation="5dp"
+            android:text="@string/log_in" />
+
+        <Button
+            android:id="@+id/btnChangeToRegisterScreenLogIn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorTransparent"
+            android:text="@string/account_dont_have"
+            />
+    </LinearLayout>
+</ScrollView>

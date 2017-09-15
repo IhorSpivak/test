@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="3"
+        android:title="@string/search_caps"
+        appcompat:showAsAction="always|collapseActionView"
+        appcompat:actionViewClass="android.support.v7.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/menu_action_settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:orderInCategory="2"
+        android:title="@string/settings"
+        appcompat:showAsAction="collapseActionView"/>
+    <item
+        android:id="@+id/menu_action_cart"
+        android:actionLayout="@layout/action_bar_cart_icon"
+        android:icon="@drawable/ic_shopping_basket_black_24dp"
+        android:orderInCategory="1"
+        android:title="@string/cart_caps"
+        appcompat:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_action_profile"
+        android:actionLayout="@layout/action_bar_cart_icon"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:orderInCategory="10"
+        android:title="@string/profile"
+        appcompat:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/menu_action_filter"
+        android:icon="@drawable/ic_filter_list_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/filter"
+        appcompat:showAsAction="always"/>
+
+</menu>

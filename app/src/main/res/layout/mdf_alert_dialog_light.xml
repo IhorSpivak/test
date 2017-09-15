@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mdf_alert_dialog_light_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#80000000" >
+
+    <LinearLayout
+        android:id="@+id/mdf_alert_dialog_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_shape"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/mdf_alert_dialog_txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/empty"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="-1dp"
+            android:background="#a5a5a5" />
+
+        <LinearLayout
+            android:id="@+id/mdf_alert_dialog_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:paddingTop="0dp" 
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/mdf_transparent_shape_state_left_bottom_round_corner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/empty" />
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#a5a5a5" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/mdf_transparent_shape_state_right_bottom_round_corner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/empty" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<resources>
+
+    <style name="StyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#000000</item>
+        <item name="strokeColor">#000000</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="radius">6dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton">
+        <item name="android:background">@drawable/radiobutton_custom</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="MDFAlertDialog" parent="android:Theme.Dialog">
+        <!-- Fill the screen -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">0dp</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:buttonBarButtonStyle">@style/button</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MDFPickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:buttonStyle">@style/buttonWithBorder</item>-->
+        <item name="colorAccent">@color/colorRed</item>
+        <item name="colorControlNormal">@color/colorBlack</item>
+
+
+    </style>
+
+    <style name="TutorialDialog" parent="android:Theme.Dialog">
+        <!-- Fill the screen -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">0dp</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorYellow</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="android:statusBarColor">@color/colorLightGray</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:buttonStyle">@style/button</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+        <item name="android:windowTitleSize">10sp</item>
+        <item name="drawerArrowStyle">@style/Theme.Test.DrawerArrowStyle</item>
+        <item name="android:textCursorDrawable">@android:drawable/edit_text</item>
+    </style>
+
+    <style name="Theme.Test.DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorBlack</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/cream_shape_rounded_</item>
+        <item name="android:textColor">@android:color/holo_green_dark</item>
+        <item name="android:editTextColor">@android:color/holo_green_dark</item>
+        <item name="android:textColorHint">@android:color/holo_green_dark</item>
+        <item name="android:textColorPrimary">@android:color/holo_green_dark</item>
+        <item name="android:colorForeground">@android:color/holo_green_dark</item>
+        <item name="searchIcon">@drawable/icon_search</item>
+    </style>
+
+    <!--Floating label text style-->
+    <style name="MyHintText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorRed</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorGreen</item>
+        <item name="colorButtonNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <!--<item name="android:shadowColor">#FF000000</item>-->
+        <!--<item name="android:shadowDx">0</item>-->
+        <!--<item name="android:shadowDy">-1</item>-->
+        <!--<item name="android:shadowRadius">0.2</item>-->
+        <item name="android:textSize">16dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+    <style name="buttonClear" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <!--<item name="android:shadowColor">#FF000000</item>-->
+        <!--<item name="android:shadowDx">0</item>-->
+        <!--<item name="android:shadowDy">-1</item>-->
+        <!--<item name="android:shadowRadius">0.2</item>-->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="buttonWithBorder" parent="@android:style/Widget.Button">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <!--<item name="android:shadowColor">#FF000000</item>-->
+        <!--<item name="android:shadowDx">0</item>-->
+        <!--<item name="android:shadowDy">-1</item>-->
+        <!--<item name="android:shadowRadius">0.2</item>-->
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/button_with_border_enabled</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>
